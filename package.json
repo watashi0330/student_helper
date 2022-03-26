@@ -1,0 +1,26 @@
+{
+  "name": "student_helper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/watashi0330/student_helper.git"
+  },
+  "author": "watashi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/watashi0330/student_helper/issues"
+  },
+  "homepage": "https://github.com/watashi0330/student_helper#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.8"
+  }
+}
