@@ -22,3 +22,15 @@ module.exports.create = async(req, res) => {
         console.log(error);
     }
 }
+module.exports.deleteOne = async(req, res) => {
+    try {
+        const { _id } = req.body;
+        const user = await User.findByIdAndDelete(_id);
+        res.json({
+            success: true,
+            user: user,
+        });
+    } catch (error) {
+        console.log(error);
+    }
+}
