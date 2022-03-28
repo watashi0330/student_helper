@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const mongoURI = require('./config/db');
 const app = express();
 require('dotenv').config();
 
@@ -15,6 +16,6 @@ app.use('/user', userRoutes);
 
 
 const port = process.env.PORT || 8000;
-mongoose.connect(process.env.mongoURI).then(() => {
+mongoose.connect(mongoURI).then(() => {
     app.listen(port, () => console.log(`listening on http://localhost:${port}`))
 });
